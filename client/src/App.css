@@ -1,0 +1,40 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,100..900;1,100..900&display=swap');
+
+body{
+    font-family: "Noto Serif", serif;
+}
+.active{
+    @apply text-green-400 underline-offset-4
+} 
+
+.pagination{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style-type:none;
+    padding: 0;
+
+}
+
+.pagination li{
+    margin:0 5px;
+}
+
+.pagination a{
+    display: inline-block;
+    padding: 5px 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    text-decoration: none;
+    color: #000 ;
+}
+
+.pagination a:hover{
+    background-color: #eee;
+}
+
+.pagination li.activePagination{
+    background: rgb(28, 218, 101);
+    border-radius: 4px;
+    color: #fff;
+}
